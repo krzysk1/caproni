@@ -4,7 +4,7 @@
         <[vec32array][ContactSpheres][ (2.102 0.0 -1.042 0.2949) (-0.492 -2.743 -1.009 0.3268) (-0.492 2.743 -1.009 0.3268) ]>
         <[string8][DisplayName][Caproni Ca.33]>
         <[string8][DescriptionTextEN][The Caproni Ca.33 was an Italian heavy bomber of World War I and the post-war era. It was the definitive version of the series of aircraft that began with the Caproni Ca.1 in 1914. 
-		Made by Krzysztof Kaniewski. 3D model by Paolo Matricardi (www.ilmioatelier.com).]>
+For Aerofly FS2 made by Krzysztof Kaniewski. 3D model by Paolo Matricardi (www.ilmioatelier.com).]>
 		<[float64][WingSpan][22.6]>
 		<[float64][Mass][2527]>
 		<[float64][MaximumSpeed][55.0]>
