@@ -4,7 +4,7 @@
 	// Plane: Caproni Ca.33, 8 Squadriglia, IV Gruppo, San Pelagio, primavera 1917
 	// Compilation: krzysk (at) wp.pl
 	// 3D model: Paolo Matricardi
-	// Date: Sun Dec 21 2014; Mar 2019
+	// Date: Sun Dec 21 2014; Mar 2019; Aug 2020
 	// -------------------------------------
 
     <[modelmanager][][]
@@ -161,31 +161,31 @@
 
             <[collisionhull][CollisionFuselage][]
                 <[string8][Body][Fuselage]>
-                <[string8][Geometry][fuso_69065_9]>
+                <[string8][Geometry][FUSO690659]>
                 <[float64][K][7216000]>
                 <[float64][D][72160]>
             >
             <[collisionhull][CollisionLeftWing][]
                 <[string8][Body][LeftWing]>
-                <[string8][Geometry][ali_0]>
+                <[string8][Geometry][ALI0]>
                 <[float64][K][1264000]>
                 <[float64][D][18960]>
             >
             <[collisionhull][CollisionRightWing][]
                 <[string8][Body][RightWing]>
-                <[string8][Geometry][ali_0]>
+                <[string8][Geometry][ALI0]>
                 <[float64][K][1264000]>
                 <[float64][D][18960]>
             >
             <[collisionhull][CollisionLeftLowerWing][]
                 <[string8][Body][LeftLowerWing]>
-                <[string8][Geometry][ali_10688_0]>
+                <[string8][Geometry][ALI106880]>
                 <[float64][K][1264000]>
                 <[float64][D][18960]>
             >
             <[collisionhull][CollisionRightLowerWing][]
                 <[string8][Body][RightLowerWing]>
-                <[string8][Geometry][ali_10688_0]>
+                <[string8][Geometry][ALI106880]>
                 <[float64][K][1264000]>
                 <[float64][D][18960]>
             >
@@ -250,19 +250,19 @@
             >
             <[collisionhull][CollisionFrontGear][]
                 <[string8][Body][FrontGear]>
-                <[string8][Geometry][fuso_3028_9]>
+                <[string8][Geometry][FUSO30289]>
                 <[float64][K][15160000]>
                 <[float64][D][227400]>
             >
             <[collisionhull][CollisionRightGear][]
                 <[string8][Body][RightGear]>
-                <[string8][Geometry][fuso_15403_9]>
+                <[string8][Geometry][FUSO154039]>
                 <[float64][K][35372000]>
                 <[float64][D][530580]>
             >
             <[collisionhull][CollisionLeftGear][]
                 <[string8][Body][LeftGear]>
-                <[string8][Geometry][fuso_15403_9]>
+                <[string8][Geometry][FUSO154039]>
                 <[float64][K][35372000]>
                 <[float64][D][530580]>
             >
@@ -977,7 +977,7 @@
             >
             <[collisionblade][CollisionPropeller1][]
                 <[string8][Body][Propeller1Body]>
-                <[string8][Geometry][propellerdiskc]>
+                <[string8][Geometry][PropellerDiskC]>
                 <[string8][DamageOnCrash][Propeller1.Damage]>
             >
             <[jointtorque][DriveShaft1][]
@@ -1022,7 +1022,7 @@
             >
             <[collisionblade][CollisionPropeller2][]
                 <[string8][Body][Propeller2Body]>
-                <[string8][Geometry][propellerdiskl]>
+                <[string8][Geometry][PropellerDiskL]>
                 <[string8][DamageOnCrash][Propeller2.Damage]>
             >
             <[jointtorque][DriveShaft2][]
@@ -1067,7 +1067,7 @@
             >
             <[collisionblade][CollisionPropeller3][]
                 <[string8][Body][Propeller3Body]>
-                <[string8][Geometry][propellerdiskr]>
+                <[string8][Geometry][PropellerDiskR]>
                 <[string8][DamageOnCrash][Propeller3.Damage]>
             >
             <[jointtorque][DriveShaft3][]
@@ -1402,17 +1402,17 @@
 		// ALI
 
             <[rigidbodygraphics][UpperWing][]
-                <[string8][GeometryList][ ali_0 ]>
+                <[string8][GeometryList][ ALI0 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
             <[rigidbodygraphics][LowerWing][]
-                <[string8][GeometryList][ ali_10688_0 ali_23372_0 ali_66876_0 ]>
+                <[string8][GeometryList][ ALI106880 ALI233720 ALI668760 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
             <[rigidbodygraphics][Stabilizer][]
-                <[string8][GeometryList][ ali_19544_0 ali_23324_0]>
+                <[string8][GeometryList][ ALI195440 ALI233240 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1431,7 +1431,7 @@
                 <[tmvector3d][Axis][0.002134 -0.000200 -0.015270]>
             >
             <[rigidbodygraphics][ALI_6882_0][]
-                <[string8][GeometryList][ ali_6882_0 ]>
+                <[string8][GeometryList][ ALI68820 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][ALIMoving_3.Output]>
@@ -1445,7 +1445,7 @@
                 <[tmvector3d][Axis][0.000011 0.0 0.015421]>
             >
             <[rigidbodygraphics][ALI_8782_0][]
-                <[string8][GeometryList][ ali_8782_0 ]>
+                <[string8][GeometryList][ ALI87820 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][ALIMoving_15.Output]>
@@ -1453,7 +1453,7 @@
 
 
             <[hingedbodygraphics][ALI_7798_0][]
-                <[string8][GeometryList][ ali_7606_0 ali_7798_0 ]>
+                <[string8][GeometryList][ ALI76060 ALI77980 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][AngleID][ServoLeftAileron.Output]>
@@ -1461,7 +1461,7 @@
                 <[tmvector3d][Pivot][-1.385462 9.153000 1.755224]>
             >
             <[hingedbodygraphics][ALI_9698_0][]
-                <[string8][GeometryList][ ali_9506_0 ali_9698_0 ]>
+                <[string8][GeometryList][ ALI95060 ALI96980 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][AngleID][ServoRightAileron.Output]>
@@ -1469,7 +1469,7 @@
                 <[tmvector3d][Pivot][-1.375690 -9.397217 1.728770]>
             >
             <[hingedbodygraphics][ALI_17570_0][]
-                <[string8][GeometryList][ ali_17570_0 ]>
+                <[string8][GeometryList][ ALI175700 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][AngleID][ServoLeftAileron.Output]>
@@ -1477,7 +1477,7 @@
                 <[tmvector3d][Pivot][-1.385462 9.153000 -0.292776]>
             >
             <[hingedbodygraphics][ALI_18554_0][]
-                <[string8][GeometryList][ ali_18554_0 ]>
+                <[string8][GeometryList][ ALI185540 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][AngleID][ServoRightAileron.Output]>
@@ -1508,7 +1508,7 @@
                 <[string8][InputTransform][ALIMoving_49.Output]>
             >
             <[rigidbodygraphics][ALI_20984_0][]
-                <[string8][GeometryList][ ali_20984_0 ]>
+                <[string8][GeometryList][ ALI209840 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][ALIRotate_43.Output]>
@@ -1533,14 +1533,14 @@
                 <[string8][InputTransform][ALIMoving_62.Output]>
             >
             <[rigidbodygraphics][ALI_21128_0][]
-                <[string8][GeometryList][ ali_21128_0 ]>
+                <[string8][GeometryList][ ALI211280 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][ALIRotate_56.Output]>
             >
 
             <[hingedbodygraphics][ALI_23252_0][]
-                <[string8][GeometryList][ ali_21272_0 ali_23252_0 ]>
+                <[string8][GeometryList][ ALI212720 ALI232520 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][AngleID][ServoElevator.Output]>
@@ -1551,10 +1551,10 @@
 			// Ca33_cockpit
 
             <[rigidbodygraphics][Cockpit_7074_2][]
-                <[string8][GeometryList][ ca33_cockpit_2 ca33_cockpit_2802_2 ca33_cockpit_5322_2 ca33_cockpit_7074_2
-				 ca33_cockpit_45012_2 ca33_cockpit_45372_2 ca33_cockpit_46668_2 ca33_cockpit_46908_2 ca33_cockpit_47268_2 ca33_cockpit_48564_2 ca33_cockpit_48804_2 ca33_cockpit_49164_2 ca33_cockpit_50460_2 ca33_cockpit_50754_2 ca33_cockpit_51672_2 ca33_cockpit_52536_2
-				 ca33_cockpit_41436_2 ca33_cockpit_45318_2 ca33_cockpit_47214_2 ca33_cockpit_49110_2 ca33_cockpit_50700_2 ca33_cockpit_51618_2 ca33_cockpit_40788_2 ca33_cockpit_41580_2 ca33_cockpit_55821_2 ca33_cockpit_56115_2 ca33_cockpit_56121_2
-				 ca33_cockpit_42204_2 ca33_cockpit_43140_2 ca33_cockpit_44076_2]>
+                <[string8][GeometryList][ Ca33Cockpit2 Ca33Cockpit28022 Ca33Cockpit53222 Ca33Cockpit70742
+				 Ca33Cockpit450122 Ca33Cockpit453722 Ca33Cockpit466682 Ca33Cockpit469082 Ca33Cockpit472682 Ca33Cockpit485642 Ca33Cockpit488042 Ca33Cockpit491642 Ca33Cockpit504602 Ca33Cockpit507542 Ca33Cockpit516722 Ca33Cockpit525362
+				 Ca33Cockpit414362 Ca33Cockpit453182 Ca33Cockpit472142 Ca33Cockpit491102 Ca33Cockpit507002 Ca33Cockpit516182 Ca33Cockpit407882 Ca33Cockpit415802 Ca33Cockpit558212 Ca33Cockpit561152 Ca33Cockpit561212
+				 Ca33Cockpit422042 Ca33Cockpit431402 Ca33Cockpit440762]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1572,7 +1572,7 @@
                 <[tmvector3d][Axis][-0.069220 0.0 0.0]>
             >
             <[rigidbodygraphics][Cockpit_7122_2][]
-                <[string8][GeometryList][ ca33_cockpit_7122_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit71222 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][CockpitMoving_82.Output]>
@@ -1586,7 +1586,7 @@
                 <[tmvector3d][Axis][0.071320 0.0 0.0005]>
             >
             <[rigidbodygraphics][Cockpit_8466_2][]
-                <[string8][GeometryList][ ca33_cockpit_8466_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit84662 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][CockpitMoving_86.Output]>
@@ -1601,7 +1601,7 @@
                 <[tmvector2d][Map][(-1.0 0.145386) (1.0 -0.060737)]>
             >
             <[hingedbodygraphics][Cockpit_9816_2][]
-                <[string8][GeometryList][ ca33_cockpit_9816_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit98162 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_92.Output]>
@@ -1617,7 +1617,7 @@
                 <[tmvector2d][Map][(-1.0 0.698132) (0.0 0.0) (1.0 -0.698132)]>
             >
             <[hingedbodygraphics][Cockpit_22413_2][]
-                <[string8][GeometryList][ ca33_cockpit_10455_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit104552 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_96.Output]>
@@ -1630,7 +1630,7 @@
                 <[tmvector2d][Map][(-1.0 0.145386) (1.0 -0.060737)]>
             >
             <[hingedbodygraphics][Cockpit_25302_2][]
-                <[string8][GeometryList][ ca33_cockpit_25302_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit253022 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_108.Output]>
@@ -1642,7 +1642,7 @@
                 <[tmvector2d][Map][(-1.0 0.698132) (0.0 0.0) (1.0 -0.698132)]>
             >
             <[hingedbodygraphics][Cockpit_37899_2][]
-                <[string8][GeometryList][ ca33_cockpit_25941_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit259412 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_112.Output]>
@@ -1659,7 +1659,7 @@
                 <[tmvector2d][Map][(0.0 -1.047198) (3.0 -0.523599)]>
             >
             <[hingedbodygraphics][Cockpit_42516_2][]
-                <[string8][GeometryList][ ca33_cockpit_42516_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit425162 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_128.Output]>
@@ -1674,7 +1674,7 @@
                 <[tmvector2d][Map][(0.0 -1.047198) (3.0 -0.523599)]>
             >
             <[hingedbodygraphics][Cockpit_43452_2][]
-                <[string8][GeometryList][ ca33_cockpit_43452_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit434522 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_135.Output]>
@@ -1689,7 +1689,7 @@
                 <[tmvector2d][Map][(0.0 -1.047198) (3.0 -0.523599)]>
             >
             <[hingedbodygraphics][Cockpit_44388_2][]
-                <[string8][GeometryList][ ca33_cockpit_44388_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit443882 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_142.Output]>
@@ -1705,7 +1705,7 @@
                 <[tmvector2d][Map][(0.0 -0.383972) (1.0 0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_53529_2][]
-                <[string8][GeometryList][ ca33_cockpit_53289_2 ca33_cockpit_53529_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit532892 Ca33Cockpit535292 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_166.Output]>
@@ -1720,7 +1720,7 @@
                 <[tmvector2d][Map][(0.0 -0.383972) (1.0 0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_53811_2][]
-                <[string8][GeometryList][ ca33_cockpit_53571_2 ca33_cockpit_53811_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit535712 Ca33Cockpit538112 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_174.Output]>
@@ -1735,7 +1735,7 @@
                 <[tmvector2d][Map][(0.0 -0.383972) (1.0 0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_53889_2][]
-                <[string8][GeometryList][ ca33_cockpit_53853_2 ca33_cockpit_53889_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit538532 Ca33Cockpit538892 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_182.Output]>
@@ -1751,7 +1751,7 @@
                 <[tmvector2d][Map][(0.0 0.383972) (1.0 -0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_54375_2][]
-                <[string8][GeometryList][ ca33_cockpit_54135_2 ca33_cockpit_54375_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit541352 Ca33Cockpit543752 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_189.Output]>
@@ -1766,7 +1766,7 @@
                 <[tmvector2d][Map][(0.0 0.383972) (1.0 -0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_54453_2][]
-                <[string8][GeometryList][ ca33_cockpit_54417_2 ca33_cockpit_54453_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit544172 Ca33Cockpit544532 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_198.Output]>
@@ -1781,7 +1781,7 @@
                 <[tmvector2d][Map][(0.0 0.383972) (1.0 -0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_54735_2][]
-                <[string8][GeometryList][ ca33_cockpit_54699_2 ca33_cockpit_54735_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit546992 Ca33Cockpit547352 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_206.Output]>
@@ -1797,7 +1797,7 @@
                 <[tmvector2d][Map][(0.0 -0.383972) (1.0 0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_55221_2][]
-                <[string8][GeometryList][ ca33_cockpit_54981_2 ca33_cockpit_55221_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit549812 Ca33Cockpit552212 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_214.Output]>
@@ -1812,7 +1812,7 @@
                 <[tmvector2d][Map][(0.0 -0.383972) (1.0 0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_55299_2][]
-                <[string8][GeometryList][ ca33_cockpit_55263_2 ca33_cockpit_55299_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit552632 Ca33Cockpit552992 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_222.Output]>
@@ -1827,7 +1827,7 @@
                 <[tmvector2d][Map][(0.0 -0.383972) (1.0 0.383972)]>
             >
             <[hingedbodygraphics][Cockpit_55581_2][]
-                <[string8][GeometryList][ ca33_cockpit_55545_2 ca33_cockpit_55581_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit555452 Ca33Cockpit555812 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_230.Output]>
@@ -1843,7 +1843,7 @@
                 <[tmvector2d][Map][(0.0 -0.349066) (1.0 0.523599)]>
             >
             <[hingedbodygraphics][Cockpit_56187_2][]
-                <[string8][GeometryList][ ca33_cockpit_56187_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit561872 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_240.Output]>
@@ -1851,7 +1851,7 @@
                 <[tmvector3d][Pivot][1.119388 -0.039616 0.204305]>
             >
             <[rigidbodygraphics][Cockpit_56511_2][]
-                <[string8][GeometryList][ ca33_cockpit_56511_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit565112 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1864,7 +1864,7 @@
                 <[tmvector2d][Map][(0.0 -0.349066) (1.0 0.523599)]>
             >
             <[hingedbodygraphics][Cockpit_56613_2][]
-                <[string8][GeometryList][ ca33_cockpit_56577_2 ca33_cockpit_56613_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit565772 Ca33Cockpit566132 ]>
                 <[uint32][PositionID][Fuselage.R]>******
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_248.Output]>
@@ -1872,7 +1872,7 @@
                 <[tmvector3d][Pivot][1.076351 -0.040743 0.196628]>
             >
             <[rigidbodygraphics][Cockpit_56955_2][]
-                <[string8][GeometryList][ ca33_cockpit_56955_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit569552 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1885,7 +1885,7 @@
                 <[tmvector2d][Map][(0.0 -0.349066) (1.0 0.523599)]>
             >
             <[hingedbodygraphics][Cockpit_57021_2][]
-                <[string8][GeometryList][ ca33_cockpit_57021_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit570212 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_257.Output]>
@@ -1893,7 +1893,7 @@
                 <[tmvector3d][Pivot][1.119732 -0.004608 0.204472]>
             >
             <[rigidbodygraphics][Cockpit_57345_2][]
-                <[string8][GeometryList][ ca33_cockpit_57345_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit573452 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1906,7 +1906,7 @@
                 <[tmvector2d][Map][(0.0 -0.349066) (1.0 0.523599)]>
             >
             <[hingedbodygraphics][Cockpit_57411_2][]
-                <[string8][GeometryList][ ca33_cockpit_57411_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit574112 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_265.Output]>
@@ -1914,7 +1914,7 @@
                 <[tmvector3d][Pivot][1.119400 0.031117 0.204455]>
             >
             <[rigidbodygraphics][Cockpit_57735_2][]
-                <[string8][GeometryList][ ca33_cockpit_57735_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit577352 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1927,7 +1927,7 @@
                 <[tmvector2d][Map][(0.0 -0.349066) (1.0 0.523599)]>
             >
             <[hingedbodygraphics][Cockpit_57837_2][]
-                <[string8][GeometryList][ ca33_cockpit_57801_2 ca33_cockpit_57837_2 ]>
+                <[string8][GeometryList][ Ca33Cockpit578012 Ca33Cockpit578372 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputAngle][CockpitMapping_273.Output]>
@@ -1938,7 +1938,7 @@
 			// eliche
 
             <[propellergraphics][PropellerBodyL][]
-                <[string8][GeometryList][ propellerdiskl ]>
+                <[string8][GeometryList][ PropellerDiskL ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller2.RotationAngle]>
@@ -1953,7 +1953,7 @@
                 <[uint32][NumberStops][0]>
             >
             <[rotatingbodygraphics][PropellerBodyLCone][]
-                <[string8][GeometryList][ eliche_8 ]>
+                <[string8][GeometryList][ Eliche8 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller2.RotationAngle]>
@@ -1961,7 +1961,7 @@
                 <[tmvector3d][Pivot][0.491744 2.770424 0.093447]>
             >
             <[graphics_propeller_blade][PropellerBodyLBlades][]
-                <[string8][GeometryList][ eliche_2127_8 ]>
+                <[string8][GeometryList][ Eliche21278 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller2.RotationAngle]>
@@ -1973,7 +1973,7 @@
                 <[string8][InputPitch][0.0]>
             >
             <[propellergraphics][PropellerBodyC][]
-                <[string8][GeometryList][ propellerdiskc ]>
+                <[string8][GeometryList][ PropellerDiskC ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller1.RotationAngle]>
@@ -1988,7 +1988,7 @@
                 <[uint32][NumberStops][0]>
             >
             <[rotatingbodygraphics][PropellerBodyCCone][]
-                <[string8][GeometryList][ eliche_3603_8 ]>
+                <[string8][GeometryList][ Eliche36038 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller1.RotationAngle]>
@@ -1996,7 +1996,7 @@
                 <[tmvector3d][Pivot][-2.835597 0.000473 0.090787]>
             >
             <[graphics_propeller_blade][PropellerBodyCBlades][]
-                <[string8][GeometryList][ eliche_5730_8 ]>
+                <[string8][GeometryList][ Eliche57308 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller1.RotationAngle]>
@@ -2008,7 +2008,7 @@
                 <[string8][InputPitch][0.0]>
             >
             <[propellergraphics][PropellerBodyR][]
-                <[string8][GeometryList][ propellerdiskr ]>
+                <[string8][GeometryList][ PropellerDiskR ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller3.RotationAngle]>
@@ -2023,7 +2023,7 @@
                 <[uint32][NumberStops][0]>
             >
             <[rotatingbodygraphics][PropellerBodyRCone][]
-                <[string8][GeometryList][ eliche_7206_8 ]>
+                <[string8][GeometryList][ Eliche72068 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller3.RotationAngle]>
@@ -2031,7 +2031,7 @@
                 <[tmvector3d][Pivot][0.491744 -2.769387 0.093447]>
             >
             <[graphics_propeller_blade][PropellerBodyRBlades][]
-                <[string8][GeometryList][ eliche_9333_8 ]>
+                <[string8][GeometryList][ Eliche93338 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller3.RotationAngle]>
@@ -2044,17 +2044,17 @@
             >
 			// FUSO
             <[rigidbodygraphics][Fuselage][]
-                <[string8][GeometryList][ fuso_9
-				 fuso_304_9 fuso_2836_9 fuso_3028_9 fuso_3331_9 fuso_4051_9 fuso_5371_9 fuso_5671_9
-				 fuso_61457_9 fuso_63215_9 fuso_63695_9 fuso_65303_9 fuso_65783_9 fuso_66185_9 fuso_69065_9 fuso_74867_9
-				fuso_76763_9 fuso_86596_9 mg_11 motori_13
-				 bomb1 bomb2 bomb3 bomb4 dentro_5 fuso_5803_9 fuso_shooter
-				 fuso_15403_9 fuso_17905_9 fuso_54001_9 fuso_55423_9 ]>
+                <[string8][GeometryList][ FUSO9
+				 FUSO3049 FUSO28369 FUSO30289 FUSO33319 FUSO40519 FUSO53719 FUSO56719
+				 FUSO614579 FUSO632159 FUSO636959 FUSO653039 FUSO657839 FUSO661859 FUSO690659 FUSO748679
+				FUSO767639 FUSO865969 MG11 MOTORI13
+				 Bomb1 Bomb2 Bomb3 Bomb4 Dentro5 FUSO58039 FUSOShooter
+				 FUSO154039 FUSO179059 FUSO540019 FUSO554239 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
             <[rotatingbodygraphics][FUSO_5995_9][]
-                <[string8][GeometryList][ fuso_5995_9 ]>
+                <[string8][GeometryList][ FUSO59959 ]>
                 <[uint32][PositionID][FrontGear.R]>
                 <[uint32][OrientationID][FrontGear.Q]>
                 <[uint32][AngleID][FrontWheelHull.RotationAngle]>
@@ -2062,7 +2062,7 @@
                 <[tmvector3d][Pivot][2.1029 0.0 -1.0422]>
             >
             <[rotatingbodygraphics][FUSO_18289_9][]
-                <[string8][GeometryList][ fuso_18289_9 ]>
+                <[string8][GeometryList][ FUSO182899 ]>
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
                 <[uint32][AngleID][RightWheelHull.RotationAngle]>
@@ -2083,7 +2083,7 @@
                 <[tmvector3d][Axis][0.0 -0.459304 0.0]>
             >
             <[rigidbodygraphics][FUSO_55569_9][]
-                <[string8][GeometryList][ fuso_55569_9 ]>
+                <[string8][GeometryList][ FUSO555699 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -2107,14 +2107,14 @@
                 <[string8][InputTransform][FUSORotate_368.Output]>
             >
             <[rigidbodygraphics][FUSO_55845_9][]
-                <[string8][GeometryList][ fuso_55845_9 ]>
+                <[string8][GeometryList][ FUSO558459 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][FUSORotate_372.Output]>
             >
 
             <[hingedbodygraphics][FUSO_55989_9][]
-                <[string8][GeometryList][ fuso_55989_9 fuso_56029_9 fuso_56173_9 ]>
+                <[string8][GeometryList][ FUSO559899 FUSO560299 FUSO561739 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][AngleID][ServoRudder.Output]>
@@ -2123,7 +2123,7 @@
             >
     	// left rudder
             <[rigidbodygraphics][FUSO_57595_9][]
-                <[string8][GeometryList][ fuso_57595_9 ]>
+                <[string8][GeometryList][ FUSO575959 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -2147,14 +2147,14 @@
                 <[string8][InputTransform][FUSORotate_393.Output]>
             >
             <[rigidbodygraphics][FUSO_57871_9][]
-                <[string8][GeometryList][ fuso_57871_9 ]>
+                <[string8][GeometryList][ FUSO578719 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][FUSORotate_397.Output]>
             >
 
             <[hingedbodygraphics][FUSO_58015_9][]
-                <[string8][GeometryList][ fuso_58015_9 fuso_58055_9 fuso_58199_9 ]>
+                <[string8][GeometryList][ FUSO580159 FUSO580559 FUSO581999 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][AngleID][ServoRudder.Output]>
@@ -2163,12 +2163,12 @@
             >
     	// 	windmills
             <[rigidbodygraphics][FUSO_59621_9][]
-                <[string8][GeometryList][ fuso_59621_9 ]>
+                <[string8][GeometryList][ FUSO596219 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
             <[rotatingbodygraphics][FUSO_59861_9][]
-                <[string8][GeometryList][ fuso_59861_9 ]>
+                <[string8][GeometryList][ FUSO598619 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller2.RotationAngle]>
@@ -2176,12 +2176,12 @@
                 <[tmvector3d][Pivot][-0.177652 1.003793 -0.285272]>
             >
             <[rigidbodygraphics][FUSO_60539_9][]
-                <[string8][GeometryList][ fuso_60539_9 ]>
+                <[string8][GeometryList][ FUSO605399 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
             <[rotatingbodygraphics][FUSO_60779_9][]
-                <[string8][GeometryList][ fuso_60779_9 ]>
+                <[string8][GeometryList][ FUSO607799 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller3.RotationAngle]>
@@ -2192,7 +2192,7 @@
 			// piloti
 
             <[rigidbodygraphics][piloti_15][]
-                <[string8][GeometryList][ piloti_15 piloti_11799_15 ]>
+                <[string8][GeometryList][ Piloti15 Piloti1179915 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][ShowInside][ CameraRearGunner CameraNoseGunner ]>
@@ -2204,3 +2204,4 @@
         >
     >
 >
+
